@@ -1,0 +1,10 @@
+Tool :  	1. VS Code
+		2. Node
+
+Languages:	1. HTML
+		2. CSS
+		3. JavaScript
+		4. TypeScript
+		5. Angular
+
+API:		1. RapidAPI.com

@@ -1,0 +1,353 @@
+
+/* Outer Container for right container */
+.right-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS For nav bar */
+.right-container-nav-bar{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* CSS for nav bar tabs names */
+.nav-bar-tabs{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+
+/* CSS for Today tab and for hover and for active */
+.today{
+    margin-right: 15px ;
+    color: #c5c5c5;
+}
+.today:hover{
+    color: #1a1a1a;
+    cursor: pointer;
+}
+.today-active{
+    color: #1a1a1a;
+}
+
+/* CSS for Week tab and for hover and for active */
+.week{
+    color: #c5c5c5;
+}
+.week:hover{
+    color: #1a1a1a;
+    cursor: pointer;
+}
+.week-active{
+    color: #1a1a1a;
+}
+
+/* CSS for on click underline*/
+.underline{
+    width: 40px;
+    height: 1px;
+    background-color: #1a1a1a;
+    margin-top: 1.2rem;
+}
+.underline-today{
+    transform: translate3d(-220%,0,0);
+    transition: 100ms;
+}
+.underline-week{
+    transform: translate3d(-90%,0,0);
+    transition: 100ms;
+}
+
+
+/* CSS For nav bar metrics */
+.nav-bar-metric{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS properties for celsius and fahrenheit tab along with on hover and active */
+.celsius{
+    border-radius: 500px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    font-size: small;
+}
+.fahrenheit{
+    border-radius: 500px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    font-size: small;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.celsius:hover{
+    color: #ffffff;
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+.fahrenheit:hover{
+    color: #ffffff;
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+
+.celsius-active{
+    color: #ffffff;
+    background-color: #1a1a1a;
+}
+.fahrenheit-active{
+    color: #ffffff;
+    background-color: #1a1a1a;
+}
+
+/* CSS for profile image */
+
+.profile-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+.right-container-data-box{
+    flex:12;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-top: 10px;
+}
+.right-container-week-cards{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 75px;
+    height: 95px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-left: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+    font-weight: 500;
+}
+.card-day{
+    margin: 5px;
+    margin-top: 7px;
+}
+.card-temp-img img{
+    width: 40px;
+    height: 40px;
+}
+.card-temp-value{
+    margin: 5px;
+}
+
+.right-container-today-cards{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.right-container-todays-highlight{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.right-container-todays-highlight-title{
+    margin-top: 30px;
+    flex: 2;
+    font-size: small;
+    font-weight: bold;
+}
+.right-container-todays-highlight-cards{
+    flex: 8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.right-container-todays-highlight-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 180px;
+    height: 130px;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.right-container-todays-highlight-card-title{
+    flex: 1;
+    color: #c9c9c9;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px;
+    margin-left: 20px;
+    align-self: self-start;
+}
+
+.gauge{
+    flex: 2;
+    width: 70%;
+    max-width: 180px;
+    font-size: 32px;
+    color: #004033;
+    font-weight: 500;
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+.gauge__body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background: #f3f3f4;
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  .gauge__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: #ffbf5e;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+  }
+  .gauge__cover{
+    width: 75%;
+    height: 150%;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    /* Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+
+  .right-container-todays-highlight-value{
+    flex: 1;
+    font-size: xx-large;
+    font-weight: 500;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+
+  .wind-status-value{
+    flex: 2;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -20px;
+  }
+  .unit{
+    font-size: 16px;
+  }
+  .wind-status-logo{
+    flex: 1;
+    align-self: self-start;
+    margin-left: 30px;
+  }
+  .wind-status-logo img{
+    width: 30px;
+    height: 30px;
+  }
+  .sunrise-sunset-value{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  .sunrise{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sunrise-img{
+    flex: 1;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .sunrise-img img{
+    width: 30px;
+    height: 30px;
+  }
+.sunrise-time{
+    flex: 4;
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+  .sunset{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  .sunset-img{
+    flex: 1;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .sunset-img img{
+    width: 30px;
+    height: 30px;
+  }
+  .sunset-time{
+    flex: 4;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .humidity-summary{
+    font-size: small;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
